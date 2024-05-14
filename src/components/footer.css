@@ -1,0 +1,118 @@
+.footer-container {
+  background-color: #141414;
+}
+.names {
+  position: relative;
+  padding: 5% 0 0% 6%;
+  color: #f4f4f4;
+  font-size: 20px;
+  display: flex;
+}
+.contact {
+  padding: 0px 10px;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+.contact:hover {
+  cursor: pointer;
+  color: rgb(249, 166, 12);
+}
+.guide {
+  padding: 0px 10px;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+.guide:hover {
+  cursor: pointer;
+  color: rgb(249, 166, 12);
+}
+.sustain {
+  padding: 0px 10px;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+.sustain:hover {
+  cursor: pointer;
+  color: rgb(249, 166, 12);
+}
+.diver {
+  padding: 0px 10px;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+.diver:hover {
+  cursor: pointer;
+  color: rgb(249, 166, 12);
+}
+.icon-container {
+  display: flex;
+  top: 0%;
+  padding: 10px 0 4.5% 6.6%;
+  background-color: #141414;
+  color: #f4f4f4;
+  font-size: 20px;
+  align-items: baseline;
+}
+
+.icons {
+  display: flex;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 23px;
+  width: 23px;
+  border-radius: 100%;
+  font-size: 16px;
+  color: #141414;
+  background-color: #f4f4f4;
+  margin-right: 12px;
+}
+.icon:hover {
+  cursor: hover;
+  background-color: rgb(249, 166, 12);
+  color: #f4f4f4;
+}
+.scroll-to-top-container {
+  margin-left: 45%;
+  display: flex;
+}
+.scroll-to-top-container:hover {
+  cursor: pointer;
+  color: rgb(249, 166, 12);
+}
+.scroll-to-top {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+.scroll-icon {
+  font-size: 23px;
+  padding-left: 10px;
+}
+
+.footer-texts {
+  margin-left: 41%;
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-text {
+  padding: 0 10px;
+  font-weight: 50;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: rgb(137, 140, 140);
+}
+.footer-text-nopointer {
+  padding: 0 10px;
+  font-weight: 50;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: rgb(137, 140, 140);
+}
+
+.footer-text:hover {
+  cursor: pointer;
+  color: rgb(249, 166, 12);
+}

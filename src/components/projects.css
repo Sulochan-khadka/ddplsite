@@ -1,0 +1,72 @@
+.project-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #141414;
+  overflow: hidden;
+  padding: 10% 0px;
+}
+.improve {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects-button-container {
+  /* margin: 30px 0px 300px 0px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 160px;
+  border-radius: 30px;
+  position: relative; /* Ensure position relative for proper absolute positioning of pseudo-element */
+  overflow: hidden; /* Hide the overflow of the pseudo-element */
+  border: 2px solid #f4f4f4;
+  color: #f4f4f4;
+  background-color: #141414;
+}
+.projects-button-container:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 0.5;
+  transition: all 0.3s; /* Simplify the transition */
+  transform: translateY(100%);
+}
+.projects-button {
+  font-size: 18px;
+  z-index: 1;
+}
+.projects-button-container:hover {
+  color: #141414;
+  cursor: pointer;
+}
+.projects-button-container:hover:before {
+  transform: translateY(0); /* Move the pseudo-element to fill the container */
+}
+.project-title {
+  font-size: 55px;
+  color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-horizontal {
+  display: flex;
+  padding: 30px 0;
+  /* min-width: 100%; */
+  /* width: auto; */
+  overflow: hidden;
+}
+
+.image-div {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+.image-project {
+  width: 300px;
+  height: 300px;
+  padding: 5px;
+}

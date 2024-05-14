@@ -1,0 +1,259 @@
+.navigation-container {
+  position: relative;
+}
+.navigation {
+  height: 55px;
+  display: flex;
+  padding: 10px 10px;
+  font-size: 18px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: #f4f4f4;
+  width: 100%;
+  z-index: 2;
+  overflow-y: hidden;
+  transition: all 0.5s;
+}
+.active {
+  height: 30px;
+  display: flex;
+  padding: 10px 10px;
+  font-size: 18px;
+  align-items: center;
+  top: 0;
+  background-color: #f4f4f4;
+  width: 100%;
+  overflow-y: hidden;
+  z-index: 2;
+  transition: all 0.5s;
+  position: fixed;
+}
+.short-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.min-nav {
+  position: fixed;
+  height: 40px;
+  top: 50px;
+  width: 10%;
+  background-color: #141414;
+  z-index: 2;
+  display: flex;
+  margin-right: 5%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.navigation-part:hover {
+  color: #ee3224;
+  cursor: pointer;
+}
+.sq-nav {
+  margin: 5px 0px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cir-nav {
+  height: 23px;
+  width: 23px;
+  border-radius: 100%;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cir-nav:hover {
+  background-color: rgb(249, 166, 12);
+  color: #f4f4f4;
+}
+.aboutContainer {
+  position: relative;
+}
+.aboutContainer:before {
+  content: '';
+  position: absolute;
+  background-color: #f4f4f4;
+  height: 10px;
+  width: 10px;
+  top: -5px;
+  left: 18.5%;
+  transform: rotate(45deg);
+}
+.navigation .aboutContainer:before {
+  left: 20.6%;
+}
+.navigation .aboutContainer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  max-height: 0;
+  top: 75px;
+  background-color: #141414;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+.navigation .aboutContainer.expanded {
+  max-height: 100vh;
+  opacity: 1;
+}
+.active .aboutContainer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  max-height: 0;
+  opacity: 0;
+  top: 50px;
+  background-color: #141414;
+  transition: all 0.5s;
+}
+.active .aboutContainer.expanded {
+  max-height: 100vh;
+  opacity: 1;
+}
+.texts {
+  padding: 4% 0 3% 8%;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+.texts.expanded {
+  max-height: 100vh;
+  opacity: 1;
+}
+.text {
+  font-size: 20px;
+  color: #f4f4f4;
+  position: relative;
+  background-color: #141414;
+  overflow: visible;
+  /* height: 10px; */
+}
+
+.text:hover {
+  cursor: pointer;
+}
+
+.text:before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: aliceblue;
+  position: absolute;
+  top: 90%;
+  left: 0;
+  /* z-index: -1; */
+  transform: translateX(-100%);
+  transition: all 0.5s;
+}
+
+.text:hover:before {
+  transform: translateX(0%);
+}
+
+.spanContainer {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.expertContainer {
+  position: relative;
+}
+
+.expertContainer:before {
+  content: '';
+  position: absolute;
+  background-color: #f4f4f4;
+  height: 10px;
+  width: 10px;
+  top: -5px;
+  left: 26%;
+  transform: rotate(45deg);
+}
+
+.navigation .expertContainer:before {
+  left: 28%;
+}
+.navigation .expertContainer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  max-height: 0;
+  opacity: 0;
+  top: 75px;
+  background-color: #141414;
+  transition: all 0.5s ease-in;
+}
+.navigation .expertContainer.expanded {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+.active .expertContainer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  max-height: 0;
+  opacity: 0;
+  top: 50px;
+  background-color: #141414;
+  transition: all 0.5s;
+}
+.active .expertContainer.expanded {
+  max-height: 100vh;
+  opacity: 1;
+}
+.researchContainer {
+  position: relative;
+}
+
+.researchContainer:before {
+  content: '';
+  position: absolute;
+  background-color: #f4f4f4;
+  height: 10px;
+  width: 10px;
+  top: -5px;
+  left: 41%;
+  transform: rotate(45deg);
+}
+
+.navigation .researchContainer:before {
+  left: 42%;
+}
+.navigation .researchContainer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  max-height: 0;
+  opacity: 0;
+  top: 75px;
+  background-color: #141414;
+  transition: all 0.5s ease-in;
+}
+.navigation .researchContainer.expanded {
+  max-height: 100vh;
+  opacity: 1;
+}
+.active .researchContainer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  max-height: 0;
+  opacity: 0;
+  top: 50px;
+  background-color: #141414;
+  transition: all 0.5s;
+}
+.active .researchContainer.expanded {
+  max-height: 100vh;
+  opacity: 1;
+}
+.secondary-topics {
+  margin-left: auto;
+  display: flex;
+  margin-right: 5%;
+}
